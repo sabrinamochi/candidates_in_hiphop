@@ -1,0 +1,275 @@
+body {
+            background-color: #1A1A1F;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        [class*="col-"] {
+            float: left;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+
+        h1 {
+            font-family: 'Anton', sans-serif;
+            font-size: 3.5em;
+            text-align: center;
+            padding-top: 1rem;
+        }
+
+        .text {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 2em;
+        }
+
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: gray;
+            opacity: 1;
+        }
+
+        .choice {
+            text-align: center;
+        }
+
+        #candidateDropdown {
+            text-align: center;
+            font-size: 1.5em;
+            padding-top: 2rem;
+            font-weight: bold;
+        }
+
+        #menuCandidate {
+            background-color: white;
+            color: black;
+            padding-left: 1rem;
+        }
+
+        .button {
+            padding-top: 1rem;
+            text-align: center;
+            padding-right: 0.5em;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        #button-explain {
+            font-size: 1.2em;
+            padding-right: 1em;
+            font-family: Helvetica;
+            fill: white;
+
+        }
+
+        #neutral {
+            color: #798A8E;
+        }
+
+        #positive {
+            color: #ffb700;
+        }
+
+        #negative {
+            color: #E43200;
+        }
+
+        #chart {
+            padding-top: 0px;
+            text-align: center;
+            padding-bottom: 0px;
+            width: 80%;
+            height: 80vh;
+            position: relative;
+        }
+
+        .circle {
+            z-index: -1;
+        }
+
+
+        .xticks,
+        .yticks {
+
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .xticks {
+            font-size: .8em;
+        }
+
+        .yticks {
+            font-size: 1em;
+        }
+
+        .xticks > line, .xticks>path {
+        fill: none;
+        stroke: none;
+
+        }
+
+        #positiveLegend, #negativeLegend {
+            position:absolute;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        #positiveLegend {
+                color:#ffb700;
+        }
+
+        #negativeLegend {
+                color:#E43200;
+        }
+
+        .label {
+            font-size: 1.2em;
+            fill: white;
+        }
+
+
+        .hoverword {
+            font-size: 1.2em;
+            fill: white;
+            text-align: left;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 12em;
+            visibility: hidden;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            pointer-events: none;
+        }
+
+        #hover-example {
+            position: absolute;
+            left: 72%;
+            top: 25vh;
+            width: 12em;
+            font-size: 1.2em;
+            fill: white;
+            pointer-events: none;
+            visibility: hidden;
+        }
+
+        .footer {
+            font-size: .8em;
+            color: white;
+        }
+
+        .opacity {
+            opacity: 0.5;
+        }
+
+        .show {
+            opacity: 1;
+        }
+
+        #dropdownIntro,
+        #hoverIntro {
+            position: absolute;
+            color: white;
+            visibility: hidden;
+            font-size: 1.3em;
+        }
+
+        #dropdownIntro {
+            top: 21vh;
+            left: 61%;
+        }
+
+
+        #hoverIntro {
+            left: 72%;
+            top: 24vh;
+        }
+
+        @media (max-width:414px) {
+
+            h1 {
+                font-size: 3em;
+            }
+
+            .choice {
+                text-align: left;
+                padding-right: 0;
+            }
+
+            #candidateDropdown {
+                font-size: 1.2em;
+            }
+
+            #button-explain {
+                font-size: 1em;
+                padding-right: 0;
+            }
+
+
+            .button {
+                padding-top: .8rem;
+                padding-right: 0em;
+                font-size: 1em;
+
+
+            }
+
+            #chart {
+                padding: 0;
+            }
+
+            
+
+            .label {
+                font-size: 0.8em;
+
+            }
+
+             #positiveLegend, #negativeLegend {
+                font-size: .8em;
+            }
+
+            .yticks {
+                font-size: .8em;
+            }
+
+            .hoverword {
+                font-size: .6em;
+            }
+
+            #hover-example {
+                width: 10em;
+                font-size: 0.8em;
+                left: 43%;
+                top: 33vh;
+            }
+
+            #dropdownIntro,
+            #hoverIntro {
+                font-size: 0.8em;
+            }
+
+            #dropdownIntro {
+                top: 17vh;
+                left: 24%;
+            }
+
+            #hoverIntro {
+                left: 41%;
+                top: 34vh;
+            }
+
+            .source,
+            .creator {
+                font-size: 0.8em;
+            }
+
+            
+
+
+        }
