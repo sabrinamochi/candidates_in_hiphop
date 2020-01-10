@@ -147,48 +147,12 @@ body {
             pointer-events: none;
         }
 
-        #hover-example {
-            position: absolute;
-            left: 72%;
-            top: 25vh;
-            width: 12em;
-            font-size: 1.2em;
-            fill: white;
-            pointer-events: none;
-            visibility: hidden;
-        }
-
         .footer {
             font-size: .8em;
             color: white;
         }
 
-        .opacity {
-            opacity: 0.5;
-        }
 
-        .show {
-            opacity: 1;
-        }
-
-        #dropdownIntro,
-        #hoverIntro {
-            position: absolute;
-            color: white;
-            visibility: hidden;
-            font-size: 1.3em;
-        }
-
-        #dropdownIntro {
-            top: 21vh;
-            left: 61%;
-        }
-
-
-        #hoverIntro {
-            left: 72%;
-            top: 24vh;
-        }
 
         @media (max-width:414px) {
 
@@ -240,28 +204,6 @@ body {
 
             .hoverword {
                 font-size: .6em;
-            }
-
-            #hover-example {
-                width: 10em;
-                font-size: 0.8em;
-                left: 43%;
-                top: 33vh;
-            }
-
-            #dropdownIntro,
-            #hoverIntro {
-                font-size: 0.8em;
-            }
-
-            #dropdownIntro {
-                top: 17vh;
-                left: 24%;
-            }
-
-            #hoverIntro {
-                left: 41%;
-                top: 34vh;
             }
 
             .source,

@@ -183,7 +183,6 @@ Promise.all(promises).then(function (dataset) {
         .append('circle')
         .attr("class", "circle")
         .attr("class", "topCircle")
-        .attr("id", function (d) { if (d.singer === "Future") { return "special" } })
         .attr('cx', function (d) { return xScale(d.date) })
         .attr('cy', function (d) { return yScaleTop(d.count) })
         .attr('r', function (d) {
@@ -705,88 +704,5 @@ Promise.all(promises).then(function (dataset) {
 
 
 
-
-setTimeout(function () {
-    $(".title").addClass("opacity");
-    $("#candidateDropdown").addClass("opacity");
-    $("#positiveLegend").addClass("opacity");
-    $("#negativeLegend").addClass("opacity");
-    $(".xticks").addClass("opacity");
-    $(".yticks").addClass("opacity");
-    $(".label").addClass("opacity");
-    $(".bottomCircle").addClass("opacity");
-    $(".topCircle").addClass("opacity");
-    $(".creator").addClass("opacity");
-    $(".source").addClass("opacity");
-
-}, 1000);
-
-
-setTimeout(function () {
-
-    $("#candidateDropdown").removeClass("opacity");
-    document.querySelector("#dropdownIntro").style.visibility = "visible";
-
-}, 1500);
-
-setTimeout(function () {
-
-    $("#candidateDropdown").addClass("opacity");
-    document.querySelector("#dropdownIntro").style.visibility = "hidden";
-    document.querySelector("#hoverIntro").style.visibility = "visible";
-    
-
-}, 3500);
-
-
-setTimeout(function () {
-
-    document.querySelector("#hoverIntro").style.visibility = "hidden";
-    $("#special").addClass("show");
-    d3.select("#special").attr("r", function (d) {
-        if (window.matchMedia('screen and (max-width: 414px)').matches) {
-
-            return 5
-
-        }
-
-        else {
-            return 10;
-        }
-    });
-    document.querySelector("#hover-example").style.visibility = "visible"
-
-
-}, 5500);
-
-setTimeout(function () {
-
-    $(".title").removeClass("opacity");
-    $("#candidateDropdown").removeClass("opacity");
-    $(".xticks").removeClass("opacity");
-    $(".yticks").removeClass("opacity");
-    $(".label").removeClass("opacity");
-    $("#positiveLegend").removeClass("opacity");
-    $("#negativeLegend").removeClass("opacity");
-    $(".bottomCircle").removeClass("opacity");
-    $(".topCircle").removeClass("opacity");
-    $(".creator").removeClass("opacity");
-    $(".source").removeClass("opacity");
-    $("#special").removeClass("show");
-    d3.select("#special").attr("r", function (d) {
-        if (window.matchMedia('screen and (max-width: 414px)').matches) {
-
-            return 3
-
-        }
-
-        else {
-            return 7;
-        }
-    });
-    document.querySelector("#hover-example").style.visibility = "hidden"
-
-
-}, 8500);
 
 
